@@ -12,4 +12,33 @@
 body {
     font-size: 15px;
     font-family: var(--text);
+    color: var(--grayblue);
+    background: var(--vltgray);
+}
+
+h2, h3 {
+    color: var(--vdkblue);
+}
+
+.card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px 3px rgb(216, 226, 236);
+    border-top: 5px solid var(--vdkblue);
+}
+
+.one {
+    border-color: var(--cyan);
+}
+
+.two {
+    border-color: var(--red);
+}
+
+.three {
+    border-color: var(--orange);
+}
+
+.four {
+    border-color: var(--blue);
 }
