@@ -1,3 +1,4 @@
+/* GLOBAL VARIABLES */
 :root {
     --text: 'Poppins', sans-serif;
     --red: hsl(0, 78%, 62%);
@@ -9,6 +10,7 @@
     --vltgray: hsl(0, 0%, 98%);
 }
 
+/* GLOBAL STYLES */
 body {
     font-size: 15px;
     font-family: var(--text);
@@ -20,6 +22,32 @@ h2, h3 {
     color: var(--vdkblue);
 }
 
+/* TEXT WRAPPER STYLES */
+.text-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 20px;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: var(--vdkblue);
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.text-wrapper p {
+    max-width: 500px;
+    margin: 20px auto 0;
+    line-height: 1.75;
+}
+
+/* CARD STYLES */
 .card {
     background: white;
     border-radius: 5px;
@@ -27,6 +55,7 @@ h2, h3 {
     border-top: 5px solid var(--vdkblue);
 }
 
+/* BORDER COLORS */
 .one {
     border-color: var(--cyan);
 }
@@ -41,4 +70,39 @@ h2, h3 {
 
 .four {
     border-color: var(--blue);
+}
+
+/* CARD GRID STYLES */
+.card-wrapper {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    /* grid-template-columns: 1fr; */
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        ". two ."
+        "one two four"
+        "one three four"
+        ". three . ";
+}
+
+/* @media (min-width: ____) */
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
 }
