@@ -33,12 +33,10 @@ h2, h3 {
 
 h1 {
     font-weight: 200;
-    font-size: 1.6rem;
     color: var(--vdkblue);
-    margin: 0;
 }
 
-h2 {
+h1, h2 {
     font-size: 1.6rem;
     margin: 0;
 }
@@ -98,6 +96,10 @@ h2 {
 
 /* MEDIA QUERY */
 @media (min-width: 1024px) {
+    h1, h2 {
+        font-size: 2rem;
+    }
+
     .card-wrapper {
         max-width: 1200px;
         grid-template-columns: repeat(3, 1fr);
