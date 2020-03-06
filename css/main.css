@@ -95,6 +95,39 @@ h1, h2 {
 }
 
 /* MEDIA QUERY */
+@media (min-width: 700px) {
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "one two"
+            "three four";
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+    
+    footer {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
 @media (min-width: 1024px) {
     h1, h2 {
         font-size: 2rem;
@@ -119,28 +152,5 @@ h1, h2 {
     
     .card img {
         margin-bottom: 1em;
-    }
-
-    .one {
-        grid-area: one;
-    }
-
-    .two {
-        grid-area: two;
-    }
-
-    .three {
-        grid-area: three;
-    }
-
-    .four {
-        grid-area: four;
-    }
-
-    footer {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
     }
 }
